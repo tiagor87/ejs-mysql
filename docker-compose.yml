@@ -1,0 +1,9 @@
+version: "3"
+services:
+  db:
+    ports:
+      - 3306:3306
+    build: './db'
+    environment:
+      - MYSQL_ROOT_PASSWORD=mysql-password
+      - MYSQL_DATABASE=database
